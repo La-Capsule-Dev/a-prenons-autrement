@@ -1,12 +1,12 @@
 <footer>
     <div class="footer-infos">
         <div class="infos">
-            <p>Le Buzuk, 39 bellevue de la madeleine, 29600 Morlaix</p>
+            <p>Association ADDESKI, 2 Rue Michel Bakounine, 29600 Morlaix</p>
             <p>
-                Tel: 06 15 06 82 08 |
+                Tel: 02 98 63 98 77 |
                 Email :
                 <a href="mailto:ssapaysdemorlaix@mailo.com">
-                    ssapaysdemorlaix@mailo.com
+                    contact@a-prenons-autrement.fr
                 </a>
             </p>
             <p><?= secure_html($str['footer_siret']) ?></p>

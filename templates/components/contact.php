@@ -17,15 +17,15 @@ $action = $e($contactMailAction ?? '/contact'); // action du formulaire de conta
                 <h3><?= secure_html($str['contact_coords_title']) ?></h3>
 
                 <p><strong><?= secure_html($str['contact_address_label']) ?></strong>
-                    Le Buzuk, 39 bellevue de la madeleine, 29600 Morlaix
+                    Association ADDESKI, 2 Rue Michel Bakounine, 29600 Morlaix
                 </p>
 
                 <p><strong><?= secure_html($str['contact_phone_label']) ?></strong>
-                    <a href="tel:+33615068208">06 15 06 82 08</a>
+                    <a href="tel:+33615068208">02 98 63 98 77</a>
                 </p>
 
                 <p><strong><?= secure_html($str['contact_email_label']) ?></strong>
-                    <a href="mailto:ssapaysdemorlaix@mailo.com">ssapaysdemorlaix@mailo.com</a>
+                    <a href="mailto:ssapaysdemorlaix@mailo.com">contact@a-prenons-autrement.fr</a>
                 </p>
             </div>
 

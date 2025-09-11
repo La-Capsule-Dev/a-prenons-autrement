@@ -38,7 +38,7 @@
             <button>Rejoindre</button>
         </div>
     </section>
-    <img class="dessin" src="/assets/img/illustration_projet_ssa.png" alt="Illustration du projet SSA">
+    <img class="dessin" src="/assets/img/illustration.JPG" alt="Illustration du projet SSA">
 </div>
 
 <!-- Section recrutement -->
