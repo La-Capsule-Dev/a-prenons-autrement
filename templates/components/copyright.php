@@ -1,3 +1,3 @@
 <div class="copyright">
-    <p>Site web éco-conçu par <a href="">La Capsule</a></p>
+    <p>Site web éco-conçu par <a href="https://la-capsule-dev.github.io/credentials/" target="_blank">La Capsule</a></p>
 </div>
