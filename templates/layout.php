@@ -13,7 +13,7 @@
     <meta name="keywords" content="<?= secure_attr($st['meta_keywords']) ?>">
     <meta name="author" content="<?= secure_attr($str['meta_author']) ?>">
 
-    <title><?= secure_html($str['page_title']) ?></title>
+    <title>A Prenons AUTREMENT</title>
 
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="icon" type="image/png" href="/assets/img/logoSSA.png">
