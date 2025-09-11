@@ -19,7 +19,7 @@
 
         </div>
         <div class="illustration">
-            <img src="/assets/img/logo.svg" alt="<?= secure_attr($str['about_logo_alt']) ?>">
+            <img src="/assets/img/banner.webp" alt="<?= secure_attr($str['about_logo_alt']) ?>">
         </div>
     </section>
     <section class="about projet-ssa">

@@ -12,7 +12,7 @@ $action   = $e($articleGenerateIcsAction ?? '/home/generate_ics');
 
 <section class="hero">
     <div class="overlay"></div>
-    <h1>A Prenons AUTREMENT</h1>
+    <h1>A. Prenons AUTREMENT</h1>
     <p class="slogan"><?= secure_html($str['hero_slogan']) ?></p>
     <div class="cta-buttons">
         <a href="/projet" class="btn primary"><?= secure_html($str['hero_cta_more']) ?></a>

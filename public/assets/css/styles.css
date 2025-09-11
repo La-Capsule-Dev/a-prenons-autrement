@@ -293,7 +293,7 @@ body {
 
         /* HERO SECTION */
         & .hero {
-            background: url("../img/banner.jpg") no-repeat center/cover;
+            background: url("../img/banner.webp") no-repeat center/cover;
             background-attachment: fixed;
             color: var(--background);
             display: flex;
@@ -423,9 +423,10 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            clip-path: var(--clipPath);
 
             & h2 {
-                color: var(--blue);
+                color: var(--background);
             }
 
             @media screen and (max-width: 950px) {
@@ -444,9 +445,8 @@ body {
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
-                color: var(--blue);
+                color: var(--background);
                 background: var(--green);
-                clip-path: var(--clipPath);
 
                 @media screen and (max-width: 950px) {
                     padding: 15px;
@@ -458,22 +458,22 @@ body {
                 }
 
                 ul {
-                    /* padding-left: 15px; */
+                    padding-left: 15px;
                     display: flex;
                     flex-direction: column;
                     gap: 15px;
 
                     li {
-                        list-style-type: none;
+                        list-style-type: "→ ";
                     }
                 }
 
                 a {
-                    color: var(--background);
+                    color: var(--green);
                     font-weight: 600;
                     padding: 5px 15px;
                     text-decoration: none;
-                    background: var(--blue);
+                    background: var(--background);
                     border-radius: 8px;
                 }
 
@@ -484,8 +484,8 @@ body {
                     outline: none;
                     border: none;
                     border-radius: 5px;
-                    background: var(--blue);
-                    color: var(--background);
+                    background: var(--background);
+                    color: var(--green);
                     text-transform: uppercase;
                     font-weight: 700;
                     cursor: pointer;
@@ -509,7 +509,8 @@ body {
 
             & .illustration img {
                 width: 100%;
-                padding: 30px;
+                height: 100%;
+                object-fit: cover;
             }
         }
 
@@ -545,6 +546,8 @@ body {
             border-radius: 8px;
             box-shadow: #00000015;
             margin: 0 auto;
+            max-height: 80vh;
+            object-fit: contain;
 
             @media screen and (max-width: 950px) {
                 width: calc(100% - 30px);

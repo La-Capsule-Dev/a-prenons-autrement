@@ -1,12 +1,12 @@
 <footer>
     <div class="footer-infos">
         <div class="infos">
-            <p>Association ADDESKI, 2 Rue Michel Bakounine, 29600 Morlaix</p>
+            <p>2 Rue Michel Bakounine, 29600 Morlaix</p>
             <p>
-                Tel: 02 98 63 98 77 |
+                Tel: <?= secure_html($str['footer_tel']) ?> |
                 Email :
                 <a href="mailto:ssapaysdemorlaix@mailo.com">
-                    contact@a-prenons-autrement.fr
+                    <?= secure_html($str['footer_email_1']) ?>
                 </a>
             </p>
             <p><?= secure_html($str['footer_siret']) ?></p>

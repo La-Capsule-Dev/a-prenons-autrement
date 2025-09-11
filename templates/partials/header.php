@@ -17,19 +17,6 @@
             <li><a href="/galerie"><?= secure_html($str['nav_galerie']) ?></a></li>
             <li><a href="/#contact"><?= secure_html($str['nav_contact']) ?></a></li>
 
-            <li>
-                <form method="get" action="">
-                    <select name="lang" id="lang-switch" onchange="this.form.submit()">
-                        <option value="fr" <?= ($_SESSION['lang'] ?? 'fr') === 'fr' ? 'selected' : '' ?>>
-                            <?= secure_html($str['lang_fr']) ?>
-                        </option>
-                        <option value="br" <?= ($_SESSION['lang'] ?? 'fr') === 'br' ? 'selected' : '' ?>>
-                            <?= secure_html($str['lang_br']) ?>
-                        </option>
-                    </select>
-                </form>
-            </li>
-
             <?php if (\CapsuleLib\Security\CurrentUserProvider::isAuthenticated()): ?>
                 <li><a class="icons" href="/dashboard/home">
                         <img src="/assets/icons/dashboard.svg" alt="Dashboard icon">
