@@ -566,39 +566,9 @@ body {
                 padding: 15px;
             }
 
-            & .filters {
-                display: flex;
-                gap: 15px;
-
-                @media screen and (max-width: 950px) {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                }
-
-                & .filter-btn {
-                    padding: 5px 15px;
-                    background-color: var(--background);
-                    color: var(--blue);
-                    border-radius: 8px;
-                    border: 1px solid var(--green);
-                    cursor: pointer;
-                    transition: background-color 0.3s;
-
-                    &.active-filter {
-                        background: var(--green);
-                        color: var(--background);
-                    }
-
-                    &:hover {
-                        background-color: var(--green);
-                        color: var(--background);
-                    }
-                }
-            }
-
             & .news-grid {
-                display: flex;
-                align-items: center;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
                 flex-wrap: wrap;
                 gap: 15px;
 

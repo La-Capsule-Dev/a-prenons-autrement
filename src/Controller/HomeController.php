@@ -47,7 +47,7 @@ final class HomeController extends RenderController
 
     public function home(): void
     {
-        $articles = $this->articleService->getUpcoming();
+        $articles = $this->articleService->getAll();
         echo $this->renderView('pages/home.php', $this->base(['articles' => $articles]));
     }
 
@@ -79,7 +79,7 @@ final class HomeController extends RenderController
 
         echo $this->renderView('pages/articleDetails.php', $this->base([
             'article' => $dto,
-        ], /* withArticles */ false));
+        ], /* withArticles */ true));
     }
 
     public function contactMail(): void
