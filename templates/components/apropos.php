@@ -18,7 +18,7 @@
             <p><strong><?= secure_html($str['about_goal_label']) ?></strong>
                 <?= secure_html($str['about_goal']) ?>
             </p>
-            <a href="/projet" class="btn">En savoir plus</a>
+            <a href="/benevoles" class="btn">En savoir plus</a>
         </div>
         <div class="illustration">
             <img src="/assets/img/asso.webp" alt="<?= secure_attr($str['about_logo_alt']) ?>">
