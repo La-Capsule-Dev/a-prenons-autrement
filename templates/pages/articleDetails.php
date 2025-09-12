@@ -9,5 +9,7 @@
     <h3><?= secure_html($article->resume) ?></h3>
     <p class="description"><?= secure_html($article->description) ?></p>
     <div class="separator"></div>
-    <img src="<?= $article->image ? secure_html($article->image) : '/assets/img/banner.webp' ?>" alt="Banner">
+    <?php if (!empty($article->image)): ?>
+        <img src="/assets/img/<?= secure_html($article->image) ?>" alt="Illustration de l'article">
+    <?php endif; ?>
 </section>

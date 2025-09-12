@@ -6,7 +6,6 @@
 <?php
 $e = static fn($v) => htmlspecialchars((string)($v ?? ''), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 $action   = $e($articleGenerateIcsAction ?? '/home/generate_ics');
-
 ?>
 
 <section class="hero">
