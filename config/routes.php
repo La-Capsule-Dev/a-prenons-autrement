@@ -26,11 +26,10 @@ return static function (Router $router, DIContainer $c): void {
 
     // Public
     $router->get('/',        [$hc, 'home'],   [], name: 'home');
-    $router->get('/projet',  [$hc, 'projet']);
-    $router->get('/galerie', [$hc, 'galerie']);
+    $router->get('/benevoles',  [$hc, 'projet']);
     $router->get('/article/{id:\d+}', [$hc, 'article'], [], name: 'article.show');
     $router->post('/contact', [$hc, 'contactMail'], name: 'contact.mail');
-    
+
     // Auth
     $router->get('/login',  [$lc, 'loginForm']);
     $router->post('/login', [$lc, 'loginSubmit']);
@@ -42,7 +41,7 @@ return static function (Router $router, DIContainer $c): void {
         $r->get('/account', [$dc, 'account'], name: 'dash.account');
         $r->get('/users',   [$dc, 'users'],        name: 'dash.users');
         $r->post('/account/password', [$dc, 'accountPassword']);
-        
+
         // Users (admin)
         $r->group('/', [MiddlewareAuth::role('admin')], function (Router $r2) use ($uc) {
             $r2->post('/users/create',    [$uc, 'usersCreate']);

@@ -25,7 +25,7 @@ $action = $e($contactMailAction ?? '/contact'); // action du formulaire de conta
                 </p>
 
                 <p><strong><?= secure_html($str['contact_email_label']) ?></strong>
-                    <a href="mailto:ssapaysdemorlaix@mailo.com">contact@a-prenons-autrement.fr</a>
+                    <a href="mailto:association@a-prenons-autrement.fr">association@a-prenons-autrement.fr</a>
                 </p>
             </div>
 

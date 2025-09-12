@@ -87,7 +87,7 @@ final class HomeController extends RenderController
         RequestUtils::ensurePostOrRedirect('/contact');
 
         if (isset($_POST['message']) && isset($_POST['email']) && isset($_POST['name'])) {
-            $to = 'aurelien.corre@outlook.fr';
+            $to = 'association@a-prenons-autrement.fr';
             $subject = 'Message de ' . $_POST['name'];
             $content = htmlspecialchars($_POST['message']);
 

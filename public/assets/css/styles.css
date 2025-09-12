@@ -398,7 +398,7 @@ body {
         }
 
         & .ssaProject-hero {
-            background: url("/assets/img/projetssa.webp") no-repeat center/cover;
+            background: url("/assets/img/benevole.webp") no-repeat center/cover;
             background-attachment: fixed;
 
             & h1 {
@@ -504,7 +504,11 @@ body {
             & .about-text {
                 background: var(--background);
                 clip-path: none;
-                color: var(--blue);
+                color: var(--foreground);
+
+                & h2 {
+                    color: var(--green);
+                }
             }
 
             & .illustration img {

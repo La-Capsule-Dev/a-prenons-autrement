@@ -31,7 +31,7 @@ return [
     // NAVIGATION
     'nav_title'             => 'A. Prenons AUTREMENT',
     'nav_home'              => 'Accueil',
-    'nav_project'           => 'L\'association',
+    'nav_project'           => 'Les bénévoles',
     'nav_agenda'            => 'Agenda',
     'nav_actualites'        => 'Actualités',
     'nav_galerie'           => 'Galerie',
