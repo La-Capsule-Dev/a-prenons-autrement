@@ -1,6 +1,6 @@
 <section class="form-section">
     <h2><?= secure_html($str['create_article_title']) ?></h2>
-    <form method="post" action="/articles/create" enctype="multipart/form-data" autocomplete="off" class="article-form">
+    <form method="post" action="/dashboard/articles/create" enctype="multipart/form-data" autocomplete="off" class="article-form">
         <?= \CapsuleLib\Security\CsrfTokenManager::insertInput(); ?>
 
         <label for="titre"><?= secure_html($str['create_article_label_title']) ?></label>

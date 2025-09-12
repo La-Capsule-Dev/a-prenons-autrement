@@ -62,6 +62,7 @@ final class ArticleService
         try {
             $payload = $this->toPersistenceArray($data) + [
                 'author_id' => isset($user['id']) ? (int)$user['id'] : null,
+                'author' => isset($user['username']) ? (string)$user['username'] : 'inconnu',
             ];
             $this->articleRepository->create($payload);
         } catch (\Throwable $e) {

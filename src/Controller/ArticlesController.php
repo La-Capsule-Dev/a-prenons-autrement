@@ -65,7 +65,7 @@ final class ArticlesController extends RenderController
             'createUrl'     => '/dashboard/articles/create',
             'editBaseUrl'   => '/dashboard/articles/edit',
             'deleteBaseUrl' => '/dashboard/articles/delete',
-            'showBaseUrl'   => '/dashboard/articles/show', // <-- pour le lien "Voir"
+            'showBaseUrl'   => '/dashboard/articles/show',
         ]);
     }
 
@@ -94,7 +94,7 @@ final class ArticlesController extends RenderController
         $errors = FormState::consumeErrors();
         $data   = FormState::consumeData();
 
-        $this->renderDash('Créer un article', 'dash_article_form.php', [
+        $this->renderDash('Créer un article', 'create_article.php', [
             'action'  => '/dashboard/articles/create',
             'article' => $data ?? null,
             'errors'  => $errors,
