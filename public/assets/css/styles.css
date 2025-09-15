@@ -1129,6 +1129,45 @@ body {
         }
     }
 
+    & .articles form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: var(--padSmall);
+
+        @media screen and (max-width: 950px) {
+            width: 100%;
+        }
+
+        & input {
+            padding: 5px var(--padSmall);
+            border: 1px solid var(--shadow);
+            border-radius: var(--radius);
+            background-color: #b8b8b825;
+            transition: border-color 0.3s;
+            outline: none;
+
+            &:focus {
+                border: 1px solid var(--accent);
+            }
+        }
+
+        & textarea {
+            resize: vertical;
+        }
+
+        & button {
+            all: unset;
+            padding: var(--padSmall) var(--padMedium);
+            background: var(--orange);
+            color: var(--background);
+            border-radius: var(--radius);
+            cursor: pointer;
+            max-width: fit-content;
+            font-weight: 600;
+        }
+    }
+
     & .copyright {
         width: 100%;
         padding: 5px var(--padMedium);

@@ -136,7 +136,7 @@ final class ArticlesController extends RenderController
 
         $this->renderDash('Modifier un article', 'dash_article_form.php', [
             'action'  => "/dashboard/articles/edit/{$id}",
-            'article' => $prefill ?: $dto,
+            'article' => $dto,
             'errors'  => $errors,
         ]);
     }

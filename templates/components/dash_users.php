@@ -1,4 +1,7 @@
 <?php
+
+use CapsuleLib\Security\CsrfTokenManager;
+
 $e = static fn($v) => htmlspecialchars((string)($v ?? ''), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 ?>
 
@@ -15,6 +18,7 @@ $e = static fn($v) => htmlspecialchars((string)($v ?? ''), ENT_QUOTES | ENT_SUBS
 
     <div class="wrapper">
         <form id="usersTableForm" method="POST" action="/dashboard/users/delete">
+            <?= CsrfTokenManager::insertInput() ?>
             <input type="hidden" name="action" value="delete">
             <table class="table table-striped">
                 <thead>
@@ -50,6 +54,8 @@ $e = static fn($v) => htmlspecialchars((string)($v ?? ''), ENT_QUOTES | ENT_SUBS
 
     <div class="popup hidden">
         <form method="POST" action="/dashboard/users/create">
+            <?= CsrfTokenManager::insertInput() ?>
+
             <h2>Créer un utilisateur</h2>
             <input type="hidden" name="action" value="create">
 

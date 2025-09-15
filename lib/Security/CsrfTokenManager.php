@@ -33,7 +33,11 @@ class CsrfTokenManager
     /**
      * Génère un champ input HTML caché contenant le token CSRF.
      *
-     * À insérer dans les formulaires HTML pour protection automatique.
+     * Exemple d'utilisation :
+     * <form action="..." method="post">
+     *     <?= CsrfTokenManager::insertInput() ?>
+     *     <!-- Le reste du formulaire -->
+     * </form>
      *
      * @return string Champ HTML input hidden avec token CSRF.
      */
