@@ -830,7 +830,7 @@ body {
             height: 100%;
             width: 100%;
             max-width: 300px;
-            background: var(--accent);
+            background: var(--foreground);
             padding: var(--padMedium);
             display: flex;
             flex-direction: column;
@@ -888,7 +888,7 @@ body {
 
             /* style du formulaire */
             & #update-password-form {
-                width: fit-content;
+                width: 50%;
                 height: fit-content;
                 display: flex;
                 flex-direction: column;
@@ -949,7 +949,7 @@ body {
                     overflow-y: scroll;
 
                     & th {
-                        background: var(--accent);
+                        background: var(--foreground);
                         color: var(--background);
                         padding: var(--padSmall);
                         text-align: left;
@@ -995,7 +995,7 @@ body {
         & a {
             all: unset;
             padding: 5px var(--padSmall);
-            background: var(--accent);
+            background: var(--foreground);
             color: var(--background);
             border-radius: var(--radius);
             cursor: pointer;

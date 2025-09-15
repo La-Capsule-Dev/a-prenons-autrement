@@ -15,34 +15,6 @@ $action   = $e($accountPasswordAction ?? '/dashboard/account/password');
 ?>
 
 <section class="account">
-    <h1><?= $e($str['account.title'] ?? 'Mon compte') ?></h1>
-
-    <div class="wrapper">
-        <table class="table account__identity">
-            <thead>
-                <tr>
-                    <th class='username'><?= $e($str['account.username'] ?? 'Utilisateur') ?></th>
-                    <th>Rôle</th>
-                    <th class='email'><?= $e($str['account.email'] ?? 'Email') ?></th>
-                    <th>Gérer</th>
-
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="usernameValue" name='Value'><?= $username ?></td>
-                    <td class='<?= htmlspecialchars($user['role']) ?>'>
-                        <p><?= $role ?></p>
-                    </td>
-                    <td class="emailValue" name='emailValue'><?= $email ?></td>
-                    <td><button class="editBtn" type="button" onclick='editLeUser(event)'>Gérer</button></td>
-                </tr>
-            </tbody>
-
-        </table>
-    </div>
-
-
     <?php if (!empty($flash)): ?>
         <p class="notice notice--success"><?= $e($flash) ?></p>
     <?php endif; ?>

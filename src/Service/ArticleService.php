@@ -90,14 +90,31 @@ final class ArticleService
         }
 
         try {
-            $payload = $this->toPersistenceArray($data);
+            $article = $this->articleRepository->find($id);
+            if (!$article) {
+                return ['errors' => ['_global' => 'Article introuvable.'], 'data' => $data];
+            }
+
+            $newData = $this->toPersistenceArray($data);
+
+            $payload = array_merge($article, array_filter(
+                $newData,
+                fn($v) => $v !== null && $v !== ''
+            ));
+
+            unset($payload['id'], $payload['created_at']);
+
             $this->articleRepository->update($id, $payload);
         } catch (\Throwable $e) {
-            return ['errors' => ['_global' => 'Erreur lors de la mise à jour.'], 'data' => $data];
+            return [
+                'errors' => ['_global' => 'Erreur lors de la mise à jour : ' . $e->getMessage()],
+                'data'   => $data
+            ];
         }
 
         return [];
     }
+
 
     public function delete(int $id): void
     {
