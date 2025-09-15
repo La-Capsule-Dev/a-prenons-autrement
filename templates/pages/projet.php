@@ -23,7 +23,7 @@
 
         </div>
         <div class="illustration">
-            <img src="/assets/img/banner.webp" alt="<?= secure_attr($str['about_logo_alt']) ?>">
+            <img src="/assets/img/aidants_benevoles.webp" alt="<?= secure_attr($str['about_logo_alt']) ?>">
         </div>
     </section>
     <section class="about projet-ssa">
@@ -38,6 +38,6 @@
             <p>Si vous avez des questions, n’hésitez pas à nous contacter par mail à <a href="mailto:association@a-prenons-autrement.fr">association@a-prenons-autrement.fr</a></p>
         </div>
     </section>
-    <img class="dessin" src="/assets/img/illustration.JPG" alt="Illustration du projet SSA">
+    <img class="dessin" src="/assets/img/illustration.webp" alt="Illustration du projet SSA">
 </div>
 <div class="separator"></div>
