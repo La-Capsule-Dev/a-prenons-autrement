@@ -1087,7 +1087,6 @@ body {
         justify-content: center;
         gap: var(--padSmall);
         padding: var(--padMedium);
-        padding-top: 120px;
 
         & form {
             display: flex;
