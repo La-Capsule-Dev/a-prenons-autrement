@@ -21,7 +21,7 @@ $action = $e($contactMailAction ?? '/contact'); // action du formulaire de conta
                 </p>
 
                 <p><strong><?= secure_html($str['contact_phone_label']) ?></strong>
-                    <a href="tel:+33615068208">02 98 63 98 77</a>
+                    <a href="tel:+33298639877">02 98 63 98 77</a>
                 </p>
 
                 <p><strong><?= secure_html($str['contact_email_label']) ?></strong>

@@ -5,7 +5,7 @@
             <p>
                 Tel: <?= secure_html($str['footer_tel']) ?> |
                 Email :
-                <a href="mailto:ssapaysdemorlaix@mailo.com">
+                <a href="mailto:<?= secure_attr($str['footer_email_1']) ?>">
                     <?= secure_html($str['footer_email_1']) ?>
                 </a>
             </p>
