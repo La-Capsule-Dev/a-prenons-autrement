@@ -12,7 +12,6 @@
             <li><a href="/"><?= secure_html($str['nav_home']) ?></a></li>
             <li><a href="/#about"><?= secure_html($str['nav_apropos']) ?></a></li>
             <li><a href="/#news"><?= secure_html($str['nav_actualites']) ?></a></li>
-            <li><a href="/#agenda"><?= secure_html($str['nav_agenda']) ?></a></li>
             <li><a href="/benevoles"><?= secure_html($str['nav_project']) ?></a></li>
             <li><a href="/#contact"><?= secure_html($str['nav_contact']) ?></a></li>
 
